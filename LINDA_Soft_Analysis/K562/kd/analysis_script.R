@@ -25,9 +25,9 @@ ff2 <- list.files("../../../Gene_Expression/output/k562/")[
 ff3 <- list.files("../../../Transcript_Expression/output/k562/")[
   which(grepl(pattern = "es_data_", x = list.files("../../../Transcript_Expression/output/k562/"), fixed = TRUE))]
 
-cases <- intersect(x = intersect(x = sapply(strsplit(x = ff1, split = "_", fixed = TRUE), "[", 2), 
-                                 y = sapply(strsplit(x = ff2, split = "_", fixed = TRUE), "[", 3)), 
-                   y = sapply(strsplit(x = ff3, split = "_", fixed = TRUE), "[", 3))
+cases <- c("hnrnpa2b1", "hnrnpc", "magoh", "hnrnpu", "ncbp2", "pabpn1", 
+           "papola", "pcbp1", "polr2g", "ppil4", "prpf6", "prpf8", "puf60", 
+           "sf1", "srsf1", "smndc1")
 
 load(file = system.file("extdata", "digger_human_transcripts.RData", package = "LINDA"))
 
