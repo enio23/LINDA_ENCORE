@@ -17,7 +17,7 @@ library("OmnipathR")
 
 dir.create("output")
 
-# interactions <- import_omnipath_interactions(resources = "BioGRID")
+# interactions <- import_omnipath_interactions()
 # interactions <- interactions[which(interactions$is_directed==1), ]
 # interactions <- interactions[which((interactions$is_stimulation+interactions$is_inhibition)==1), ]
 # ppi <- matrix(data = "1", nrow = nrow(interactions), ncol = 3)
