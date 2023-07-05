@@ -88,7 +88,8 @@ foreach(ii = 1:length(cases)) %dopar% {
                          condition = ii, 
                          intensity = intensity, 
                          solver = "cplex", 
-                         save_res = TRUE)
+                         save_res = TRUE,
+                         splice_effect_sign = "negative")
     
     kdList[[length(kdList)+1]] <- res_ctrl
     
